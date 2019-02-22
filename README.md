@@ -21,4 +21,4 @@ for(int i = 1; i <= nGroups; i++)
   }
 }
 ```
-![](Screenshots/Stack Columns in Single Worksheet.png)
+<img src="Screenshots/Stack Columns in Single Worksheet.png">
