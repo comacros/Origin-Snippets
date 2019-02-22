@@ -6,6 +6,8 @@ LabTalk, Python and Origin-C snippets to free you hands.
 
 ![](donation.png)
 
+1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
+
 ### Stack Groups in Worksheet
 LabTalk
 ```
