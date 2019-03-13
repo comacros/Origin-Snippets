@@ -24,3 +24,15 @@ for(int i = 1; i <= nGroups; i++)
 }
 ```
 <img src="Screenshots/Stack Columns in Single Worksheet.png">
+
+### Remove Links in Worksheet
+LabTalk
+```
+for(int i = 1; i <= wks.ncols; i++)
+{
+    range rr = !$(i);
+    %A = [%H]%(wks.name$);
+    dataset ds = %A!$(i);
+    rr = ds;
+}
+```
