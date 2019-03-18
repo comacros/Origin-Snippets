@@ -6,8 +6,8 @@ LabTalk, Python, Origin-C and HTML/JavaScript snippets to free you hands.
 
 ![](donation.png)
 
-1. [LabTalk, Python and Origin-C]()
-2. [HTML/JavaScript]()
+1. [LabTalk, Python and Origin-C](#labtalk-python-and-origin-c)
+2. [HTML and JavaScript](#html-and-javascript)
 
 ## LabTalk, Python and Origin-C
 1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
@@ -42,4 +42,4 @@ for(int i = 1; i <= wks.ncols; i++)
 }
 ```
 
-## HTML/JavaScript
+## HTML and JavaScript
