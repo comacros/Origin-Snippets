@@ -7,6 +7,7 @@ LabTalk, Python and Origin-C snippets to free you hands.
 ![](donation.png)
 
 1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
+2. [Remove Links in Worksheet](#remove-links-in-worksheet)
 
 ### Stack Groups in Worksheet
 LabTalk
