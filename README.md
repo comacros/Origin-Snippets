@@ -43,3 +43,10 @@ for(int i = 1; i <= wks.ncols; i++)
 ```
 
 ## HTML and JavaScript
+
+1. (Center Alignment for an Image)[#center-alignment-for-an-image)
+
+### Center Alignment for an Image
+```
+<img alt='{{graph://graph1}}' style='display:block; margin:0 auto;' width='300px'>
+```
