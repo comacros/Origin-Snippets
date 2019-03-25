@@ -50,3 +50,27 @@ for(int i = 1; i <= wks.ncols; i++)
 ```
 <img alt='{{graph://graph1}}' style='display:block; margin:0 auto;' width='300px'>
 ```
+
+### MathJax
+```
+ <script type='text/x-mathjax-config'>
+    MathJax.Hub.Config({
+      extension: ["tex2jax.js", "TeX/AMSmath.js"],
+      jax:["input/TeX", "output/SVG"],
+      //displayAlign: "left"
+    })
+  </script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default">
+</script>
+<div>
+  Inline equation: \(f\left(x\right)=a+bx\)
+</div>
+<div>
+  Display:
+  \[
+  P\left(x\right)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\left(x-\mu\right)^2/2\sigma^2}
+  \]
+</div>
+```
+<img src="Screenshots/mathjax.png">
