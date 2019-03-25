@@ -45,6 +45,7 @@ for(int i = 1; i <= wks.ncols; i++)
 ## HTML and JavaScript
 
 1. [Center Alignment for an Image](#center-alignment-for-an-image)
+2. [MathJax](#mathjax)
 
 ### Center Alignment for an Image
 ```
