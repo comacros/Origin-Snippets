@@ -9,7 +9,7 @@ LabTalk, Python, Origin-C and HTML/JavaScript snippets to free you hands.
 ## LabTalk, Python and Origin-C
 1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
 2. [Remove Links in Worksheet](#remove-links-in-worksheet)
-3. [Pass Vector Values Between Origin C and C++)(#Pass Vector Values Between Origin C and C++)
+3. [Pass Vector Values Between Origin C and C++](#pass-vector-values-between-origin-c-and-c)
 
 ### Stack Groups in Worksheet
 LabTalk
