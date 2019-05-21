@@ -3,8 +3,6 @@
 LabTalk, Python, Origin-C and HTML/JavaScript snippets to free you hands.
 
 
-![](donation.png)
-
 1. [LabTalk, Python and Origin-C](#labtalk-python-and-origin-c)
 2. [HTML and JavaScript](#html-and-javascript)
 
