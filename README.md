@@ -9,6 +9,7 @@ LabTalk, Python, Origin-C and HTML/JavaScript snippets to free you hands.
 ## LabTalk, Python and Origin-C
 1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
 2. [Remove Links in Worksheet](#remove-links-in-worksheet)
+3. [Pass Vector Values Between Origin C and C++)(#Pass Vector Values Between Origin C and C++)
 
 ### Stack Groups in Worksheet
 LabTalk
@@ -84,7 +85,7 @@ extern "C"
 __declspec(dllexport)
 void Foo(double** p, size_t* n)
 {
-    std::vector<double> xs(4);
+    std::vector<double> xs(1024);
     *n = xs.size();
     *p = (double*)calloc(xs.size(), sizeof(double));
     memcpy(*p, xs.data(), xs.size() * sizeof(double));
