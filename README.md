@@ -39,6 +39,76 @@ for(int i = 1; i <= wks.ncols; i++)
 }
 ```
 
+### Pass Vector Values Between Origin C and C++
+#### Pass vector values from Origin C to C++
+C++
+```
+extern "C"
+__declspec(dllexport)
+void Foo(double* p, size_t n)
+{
+    std::vector<double> xs;
+    xs.assign(p, p + n);
+    
+    // ...
+    
+    return;
+}
+```
+Origin C
+```
+void Bar()
+{
+    vector<double> xs(1024);
+    size_t n = xs.GetSize();
+    Foo(xs, n);
+    
+    return;
+}
+```
+#### Pass vector values from C++ to Origin C
+C++
+```
+extern "C"
+__declspec(dllexport)
+void ReleaseMemory(void* p)
+{
+    if(p)
+    {
+        free(p);
+        p = nullptr;
+    }
+}
+
+extern "C"
+__declspec(dllexport)
+void Foo(double** p, size_t* n)
+{
+    std::vector<double> xs(4);
+    *n = xs.size();
+    *p = (double*)calloc(xs.size(), sizeof(double));
+    memcpy(*p, xs.data(), xs.size() * sizeof(double));
+    
+    return;
+}
+```
+Origin C
+```
+void Bar()
+{
+    double* p;
+    size_t n;
+    Foo(&p, &n);
+    
+    vector<double> xs(n);
+    if(n)
+        memcpy(xs, p, n * sizeof(double));
+    ReleaseMemory(p);
+    
+    return;
+}
+```
+
 ## HTML and JavaScript
 
 1. [Center Alignment for an Image](#center-alignment-for-an-image)
