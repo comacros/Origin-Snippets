@@ -110,6 +110,24 @@ void Bar()
 }
 ```
 
+### Split/Reshape Column Data
+Python
+```
+import PyOrigin as po
+
+wks = po.FindWorksheet('[Book1]Sheet1')
+col = wks['A']
+
+ncols = 5    # Split into 5 columns
+
+src = A.GetData()
+dst = [src[i::ncols] for i in range(ncols)]
+
+for i in range(ncols):
+    wks.InsertCol(col.Index + 1, '')
+wks.SetData(dst, 0, col.Index + 1)
+```
+
 ## HTML and JavaScript
 
 1. [Center Alignment for an Image](#center-alignment-for-an-image)
