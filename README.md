@@ -10,6 +10,7 @@ LabTalk, Python, Origin-C and HTML/JavaScript snippets to free you hands.
 1. [Stack Groups in Worksheet](#stack-groups-in-worksheet)
 2. [Remove Links in Worksheet](#remove-links-in-worksheet)
 3. [Pass Vector Values Between Origin C and C++](#pass-vector-values-between-origin-c-and-c)
+4. [Split/Reshape Column Data](#splitreshape-column-data)
 
 ### Stack Groups in Worksheet
 LabTalk
@@ -127,6 +128,7 @@ for i in range(ncols):
     wks.InsertCol(col.Index + 1, '')
 wks.SetData(dst, 0, col.Index + 1)
 ```
+<img src="Screenshots/Split Reshape Column Data.png">
 
 ## HTML and JavaScript
 
