@@ -121,7 +121,7 @@ col = wks['A']
 
 ncols = 5    # Split into 5 columns
 
-src = A.GetData()
+src = col.GetData()
 dst = [src[i::ncols] for i in range(ncols)]
 
 for i in range(ncols):
